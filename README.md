@@ -9,3 +9,11 @@ Provide a movie api for react js app
 5. `git commit -m "your message"`
 6. `git push -u origin main or git push`
 
+
+## Database Options
+
+1. SQL  - MYSQL ,MariaDB, postgreSQL
+2. NoSQL - MangoDB and So 
+
+
+ 

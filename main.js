@@ -1,5 +1,6 @@
 import express from "express";
 import movieRoute from "./routes/movies.route.js";
+import connectDB from "./lib/db.js";
 const app=express();
 const port=3000
 app.get('/',(req,res)=>{
@@ -8,6 +9,14 @@ app.get('/',(req,res)=>{
    });
 
 });
+// Data understanding middleware
+app.use(express.json());
+
+
+//connnect DB
+connectDB();
+
+
 // CRUD functionality of movies
 // CLIENT -----> MIDDLEWARE ----> SERVER
 
